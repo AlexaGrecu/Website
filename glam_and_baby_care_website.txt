@@ -1,6 +1,0 @@
-Readme file
-
-
-Learning how to make a website and modifying it with GIT
-
-ABCD
