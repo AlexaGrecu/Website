@@ -13,5 +13,5 @@ class RegisterForm(ModelForm):
             'name': 'Username',
             'emailid': 'Email Id',
             'phoneNum': 'Phone Number',
-            'password': "Password"
+            'password': 'Password'
     }

@@ -5,27 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="181f56e2-1f2b-4638-b441-574b2e0c22a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/aboutUs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/contactUs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/homepage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/myFirstProject/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/loggedin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/signin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/user_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/user_data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/user_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/myFirstProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/myFirstProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/myFirstProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/myFirstProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/aboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/templates/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_projects/myFirstProject/glam_and_baby_care_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -87,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676973193848</updated>
       <workItem from="1676973195383" duration="5093000" />
-      <workItem from="1676984413604" duration="23159000" />
+      <workItem from="1676984413604" duration="32511000" />
     </task>
     <servers />
   </component>

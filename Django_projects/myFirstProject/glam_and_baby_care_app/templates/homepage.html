@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 <style>
-    .container{
+    .container {
         width: 200%;
         margin: 100px;
         color: green;
@@ -10,15 +10,14 @@
 </style>
 <body>
     {% block content %}
-    <form method="get" action="signin">
-    <button type="submit" style="float: right; width: 10%; height: 30px; font-size: 15px">Sign In</button>
-    </form>
-    <form method="get" action="register">
-    <button type="submit" style="float: right; width: 10%; height: 30px; font-size: 15px">Register</button>
-    </form>
-    <h2>
+        <form method="get" action="signin">
+        <button type="submit" style="float: right; width: 10%; height: 30px; font-size: 15px">Sign In</button>
+        </form>
+        <form method="get" action="register">
+        <button type="submit" style="float: right; width: 10%; height: 30px; font-size: 15px">Register</button>
+        </form>
+        <h2>
         <p style="text-align: center;">Welcome to Glam and Baby care</p>
-    </h2>
-    <img src="https://unsplash.com/photos/xkYJqEno62c" width="1050" height="700" style="text-align: center;">
+        </h2>
     {% endblock %}
 </body>
