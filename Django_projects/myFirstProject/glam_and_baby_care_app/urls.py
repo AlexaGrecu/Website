@@ -4,6 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+
 urlpatterns = [
     path('', views.app_homepage, name='app_homepage'),
     path('about_us', views.about_us, name='about_us'),
@@ -18,7 +19,7 @@ urlpatterns = [
     path('usercreate/', views.UserCreateView.as_view(template_name='user_create.html'), name='usercreate'),
     path('userupdate/<int:pk>/', views.UserUpdateView.as_view(template_name='user_create.html'), name='userupdate'),
     path('userdelete/<int:pk>/', views.UserDeleteView.as_view(template_name='user_confirm_delete.html'), name='userdelete'),
-
+    path('hair', views.hair, name="hair"),
 ]
 
 if settings.DEBUG:

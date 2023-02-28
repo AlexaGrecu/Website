@@ -127,3 +127,11 @@ class UserDeleteView(DeleteView):
             return True
         else:
             return False
+
+
+def hair(request):
+    try:
+        if usrnme:
+            return render(request, "hair.html")
+    except NameError:
+        return render(request, "hair.html")

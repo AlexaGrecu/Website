@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-<style>
-    .container {
-        width: 200%;
-        margin: 100px;
-        color: green;
-        display: inline-block;
-    }
-</style>
+
 <body>
     {% block content %}
         <form method="get" action="signin">
@@ -16,10 +9,10 @@
         <form method="get" action="register">
         <button type="submit" style="float: right; width: 10%; height: 30px; font-size: 15px">Register</button>
         </form>
-
         <h2>
         <p style="text-align: center;">Welcome to Glam and Baby care</p>
         </h2>
-<img src="{% static 'image.jpg' %}" width="1700" height="1200" style="text-align: center;">
+<img src="{% static 'background.jpg' %}" width="2000" height="1200" style="text-align: center;">
     {% endblock %}
+
 </body>
