@@ -1,9 +1,12 @@
 from .import views
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('', views.app_homepage, name='app_homepage'),
-    path('about_us', views.about_us, name="about_us"),
+    path('about_us', views.about_us, name='about_us'),
     path('services', views.services, name="services"),
     path('contact_us', views.contact_us, name="contact_us"),
     path('register', views.register, name="register"),
@@ -14,5 +17,10 @@ urlpatterns = [
     path('userdetail/<int:pk>/', views.UserDetailView.as_view(template_name='user_detail'), name='userdetail'),
     path('usercreate/', views.UserCreateView.as_view(template_name='user_create.html'), name='usercreate'),
     path('userupdate/<int:pk>/', views.UserUpdateView.as_view(template_name='user_create.html'), name='userupdate'),
+    path('userdelete/<int:pk>/', views.UserDeleteView.as_view(template_name='user_confirm_delete.html'), name='userdelete'),
+
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

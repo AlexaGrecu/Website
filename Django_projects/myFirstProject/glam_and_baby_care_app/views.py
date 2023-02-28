@@ -4,7 +4,7 @@ from .forms import RegisterForm
 from django.contrib import messages
 from .models import RegisteredUser
 from django.core.exceptions import ObjectDoesNotExist
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import UserPassesTestMixin
 
 
@@ -48,7 +48,7 @@ def register(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Account created successfully')
-            return redirect("signin")
+            return redirect('signin')
         else:
             form = RegisterForm()
             user_info = {'form': form}
@@ -76,7 +76,12 @@ def signin(request):
 
 
 def loggedin(request):
-    userdetails = {'username': usrnme}
+    image_file = RegisteredUser.objects.get(name=usrnme)
+
+    pic_path = str(image_file.profilePIC)
+    full_pic_path = 'media/' + pic_path
+    userdetails = {'username': usrnme,
+                   'image': full_pic_path}
     return render(request, "loggedin.html", userdetails)
 
 
@@ -112,3 +117,13 @@ class UserUpdateView(UserPassesTestMixin, UpdateView):
             return False
 
 
+class UserDeleteView(DeleteView):
+    model = RegisteredUser
+    success_url = '/userlist'
+
+    def test_func(self):
+        if self.request.user.is_active:
+            print(self.request.user)
+            return True
+        else:
+            return False

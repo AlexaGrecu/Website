@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+<body>
+    {% block content %}
+        <form method="POST">
+            {% csrf_token %}
+                Are you sure you want to delete the data of the user {{ object.name }}?
+                <br><br>
+                <button type="submit">Delete</button>&emsp;&emsp;
+                <a role="button" href="{% url 'userdetail' object.id %}">Cancel</a>
+        </form>
+    {% endblock %}
+</body>

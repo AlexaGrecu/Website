@@ -2,7 +2,7 @@
 
 <body>
     {% block content %}
-    <form action="" method="post">
+    <form action="register.html" method="POST">
           {% csrf_token %}
           {{form.as_p}}
     <input type="submit" value="Submit">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Glam and Baby Care</title>
+<title>Glam and Baby Care</title>
     <style>
       body{
         padding-top: 80px;
@@ -10,7 +10,7 @@
       .fixed-header, .fixed-footer{
           width: 100%;
           position: fixed;
-          background: mediumpurple;
+          background:darkorchid;
           padding: 10px;
           color: white;
       }
@@ -30,7 +30,7 @@
           padding: 10px;
           height: 400px;
       }
-      .center{
+      .center {
           width: 400px;
           text-align: center;
           margin:0;
@@ -45,7 +45,7 @@
 </head>
 <body>
     <div class="fixed-header">
-        <div class="container">
+        <div class=".container">
             <nav>
                 <a href="{% url 'app_homepage' %}">Glam and Baby Care</a>
                 <a></a>
@@ -59,7 +59,7 @@
         </div>
     </div>
 
-    <main role="main" class="container">
+    <main role="main" class=".container">
         <div class="row">
             {% if messages %}
                 {% for msg in messages %}
@@ -76,7 +76,6 @@
     <a></a>
     <div class=".container">
         {% block content %}
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         {% endblock %}
     </div>
     <div class="fixed-footer">
